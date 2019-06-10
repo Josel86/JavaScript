@@ -11,6 +11,10 @@ clear.on("click", function() {
   d3.event.preventDefault();
   // Reinicia el formulario con los valores por default
   document.getElementById("mainForm").reset();
+  // Selecciona la tabla
+  var tbody = d3.select("tbody");
+  // Limpia los campos anteriores
+  tbody.html("");
 });
 
 // Filtrar la tabla
